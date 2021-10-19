@@ -1,0 +1,2 @@
+module Console_Project {
+}
