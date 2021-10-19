@@ -1,2 +1,8 @@
-# Java-Project
-Java console team project
+# Java-Team Project
+
+### 1. 주제
+### 2. 개요(주제 목적)
+### 3. 환경
+### 4. 서비스 설계 다이어그램
+### 5. 프로젝트 기간
+### 6. 역할 분담
