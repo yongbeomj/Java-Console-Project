@@ -1,4 +1,4 @@
-# Java-Team Project
+# Java Team Project
 
 ### 1. 주제
 - 호텔 예약 시스템
