@@ -1,11 +1,14 @@
-# Java Team Project
+# Hotel Reservation System
 
 ### 1. 주제
 - 호텔 예약 시스템
-### 2. 개요(주제 목적)
+### 2. 개요(주제/목적)
 - 호텔 이용을 편리하게 하기 위해 예약서비스를 제공하여 고객들의 만족도를 높임
 ### 3. 환경
-- jdk 11, eclipse, windows 10, git
+- JDK 11
+- Eclipse
+- Windows 10
+- git
 ### 4. 서비스 설계 다이어그램
 ![그림1](https://user-images.githubusercontent.com/87436495/137877871-555af2b4-6989-44b1-afe3-5f5998ae4cc5.png)
 
