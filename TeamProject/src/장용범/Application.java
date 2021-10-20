@@ -19,6 +19,7 @@ public class Application {
 			System.out.println("1.회원가입 2.로그인 3.관리자로그인 4.종료");
 			System.out.print(">>> 선택 : "); int ch = scanner.nextInt();
 			
+			
 			if (ch == 1) {
 				Member.signup();
 				for (Member temp : members) {
