@@ -31,20 +31,20 @@ public class Member {
 		// 1. 회원정보 입력
 		System.out.println("------------------회원가입 페이지 ----------------");
 		System.out.print(" 아이디 : ");
-		String h_id = Application.scanner.next();
+		String h_id = TestMain.scanner.next();
 		System.out.print(" 비밀번호 : ");
-		String h_pw = Application.scanner.next();
+		String h_pw = TestMain.scanner.next();
 		System.out.print(" 성명 : ");
-		String h_name = Application.scanner.next();
+		String h_name = TestMain.scanner.next();
 		System.out.print(" 연락처 : ");
-		String h_phone = Application.scanner.next();
+		String h_phone = TestMain.scanner.next();
 
 		// 2. 임시객체 생성
 		Member members = new Member(h_id, h_pw, h_name, h_phone);
 
 		// 아이디 중복체크
 		boolean idcheck = true;
-		for (Member temp : Application.members) {
+		for (Member temp : TestMain.members) {
 			if (temp.getH_id().equals(h_id)) {
 				System.out.println(" [[ 알림 ]] : 중복된 아이디 입니다 ");
 				idcheck = false;
@@ -54,7 +54,7 @@ public class Member {
 
 		// 3. 만든 객체를 리스트에 넣기
 		if (idcheck) {
-			Application.members.add(members);
+			TestMain.members.add(members);
 			System.out.println("[[ 알림 ]] : 회원가입이 되었습니다");
 
 			// 4. 파일 저장
@@ -101,7 +101,7 @@ public class Member {
 				// 4. 객체 생성
 				Member members = new Member(userdata[0], userdata[1], userdata[2], userdata[3]);
 				// 5. 리스트 담기
-				Application.members.add(members);
+				TestMain.members.add(members);
 			}
 		} catch (Exception e) {
 			System.out.println(" [[ 파일 불러오기 실패 ]]");
