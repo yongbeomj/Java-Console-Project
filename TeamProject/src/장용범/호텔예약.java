@@ -10,11 +10,12 @@ public interface 호텔예약 {
 	public void 파일처리();
 
 	// 디폴트메소드
-	 default void 객실정보() {
+	 default void 객실() {
 		
 		// 각 지점마다 정보 동일
 		String[][] 객실정보 = new String[3][5];
-
+		String[] 카테고리 = {"방타입","객실면적","부가혜택","예약가능여부","예약아이디"};
+		
 		// 스탠다드
 		객실정보[0][0] = "스탠다드룸";
 		객실정보[0][1] = "12평";
@@ -40,23 +41,23 @@ public interface 호텔예약 {
 				+ "유카타 실내 가운 및 슬리퍼,다이슨 슈퍼소닉(Dyson Supersonic™) 헤어드라이어";
 		객실정보[2][3] = "true";
 		객실정보[2][4] = "id";
-
+		
 		// 객실정보 순차출력
-		System.out.println("[[객실 정보]]");
-		System.out.printf(" 방타입\t평수\t편의시설\t예약가능여부\t예약아이디");
+		System.out.println(">>>>>>>>>객실 정보<<<<<<<<<");
 		
 		for (int i = 0; i < 3; i++) {
-			System.out.println("객실 "+i);
+			System.out.println("\n[[[객실 "+(i+1)+"]]]");
 			for (int j = 0; j < 5; j++) {
-				System.out.println(" 정보 "+j);
+				System.out.print((j+1) + "." + 카테고리[j] + " : ");
 				
 				if(j != 2) {
 					System.out.println(객실정보[i][j]);
 				} else {
 					String[] strArray = 객실정보[i][2].split(",");
 					int k = 1;
+					System.out.println();
 					for (String temp : strArray) {
-						System.out.println(k + "." + temp);
+						System.out.println(" " + k + ")" + temp);
 						k++;
 					}
 				
