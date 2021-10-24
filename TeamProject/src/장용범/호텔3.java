@@ -3,12 +3,42 @@ package 장용범;
 public class 호텔3 extends 호텔Total {
 
 	@Override
-	public void 예약등록() {
-		System.out.println("호텔 3 예약 등록 완료");
+	public void 예약등록(int hotelch, int roomch) {
+		if (roomch == 1) {
+			if (room[hotelch-1][roomch-1] == 0) {
+				System.out.println("호텔3 / 스위트룸 예약 완료");
+				room[hotelch-1][roomch-1] = 1;
+			}
+		} else if (roomch == 2) {
+			if (room[hotelch-1][roomch-1] == 0) {
+				System.out.println("호텔3 / 디럭스룸 예약 완료");
+				room[hotelch-1][roomch-1] = 1;
+			}
+		} else if (roomch == 3) {
+			if (room[hotelch-1][roomch-1] == 0) {
+				System.out.println("호텔3 / 스탠다드룸 예약 완료");
+				room[hotelch-1][roomch-1] = 1;
+			}
+		}
 	}
 	@Override
-	public void 예약취소() {
-		System.out.println("호텔 3 예약 취소 완료");
+	public void 예약취소(int hotelch, int roomch) {
+		if (roomch == 1) {
+			if (room[hotelch-1][roomch-1] == 1) {
+				System.out.println("호텔3 / 스위트룸 예약취소 완료");
+				room[hotelch-1][roomch-1] = 0;
+			}
+		} else if (roomch == 2) {
+			if (room[hotelch-1][roomch-1] == 1) {
+				System.out.println("호텔3 / 디럭스룸 예약취소 완료");
+				room[hotelch-1][roomch-1] = 0;
+			}
+		} else if (roomch == 3) {
+			if (room[hotelch-1][roomch-1] == 1) {
+				System.out.println("호텔3 / 스탠다드룸 예약취소 완료");
+				room[hotelch-1][roomch-1] = 0;
+			}
+		}
 	}
 	@Override
 	public void 본인예약조회() {
@@ -16,7 +46,14 @@ public class 호텔3 extends 호텔Total {
 	}
 	@Override
 	public void 전체예약현황() {
-		System.out.println("호텔 3 전체 예약현황 조회");
+		System.out.print("호텔 3\t");
+		for (int i = 0; i < 3; i++) {
+			if (room[2][i] == 0)
+				System.out.print("□\t");
+			if (room[2][i] == 1)
+				System.out.print("■\t");
+		}
+		System.out.println();
 	}
 	@Override
 	public void 파일처리() {

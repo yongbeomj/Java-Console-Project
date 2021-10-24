@@ -1,21 +1,33 @@
 package 장용범;
 
+import java.util.ArrayList;
+
 import Reference.Main;
 import Reference.Ticket;
 
 public class 호텔Total implements 호텔예약 {
 
 	// 필드
+	public static int[][] room = new int[3][3]; 
 	
 	// 생성자
 	
 	// 메소드
 	@Override
-	public void 예약등록() {
-		System.out.println("*** 예약 등록 완료 ***");
+	public void 예약등록(int hotelch, int roomch) {
+		
+		if (room[hotelch-1][roomch-1] == 0) {
+			System.out.println("*** 호텔 / ** 룸 예약 완료 ***");
+			room[hotelch-1][roomch-1] = 1;
+		}
+		
 	}
 	@Override
-	public void 예약취소() {
+	public void 예약취소(int hotelch, int roomch) {
+		if (room[hotelch-1][roomch-1] == 1) {
+			System.out.println("*** 호텔 / ** 룸 예약취소 완료 ***");
+			room[hotelch-1][roomch-1] = 0;
+		}
 		System.out.println("*** 예약 취소 완료 ***");
 	}
 	@Override
@@ -24,9 +36,12 @@ public class 호텔Total implements 호텔예약 {
 	}
 	@Override
 	public void 전체예약현황() {
-		System.out.println("*** 전체 예약현황 조회 ***");
-		for (호텔Total temp : TestMain.호텔Totals) {
-			System.out.println(temp);
+		System.out.print("호텔 **\t");
+		for (int i = 0; i < 3; i++) {
+			if (room[0][i] == 0)
+				System.out.print("□\t");
+			if (room[0][i] == 1)
+				System.out.print("■\t");
 		}
 	}
 	@Override
