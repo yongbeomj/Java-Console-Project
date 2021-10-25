@@ -37,6 +37,15 @@ public class 호텔Total implements 호텔예약 {
 	@Override
 	public void 본인예약조회() {
 		System.out.println("*** 본인예약조회 ***");
+		Member member = new Member();
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				if (room[i][j] != 0) {
+					System.out.println("*** 호텔 / ** 룸 예약 ***");
+				}
+			}
+		}
+		
 	}
 	@Override
 	public void 전체예약현황() {
