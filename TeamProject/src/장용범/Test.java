@@ -1,4 +1,4 @@
-package 장용범;
+package 신우현;
 
 import java.util.Scanner;
 
