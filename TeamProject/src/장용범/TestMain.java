@@ -119,11 +119,12 @@ public class TestMain {
 				} else if (ch2 == 5) {
 					System.out.print("1.스위트 2.디럭스 3.스탠다드"); int roomno = scanner.nextInt();
 					if (roomno == 1) {
-						
+					호텔예약.	
 					} else if (roomno == 2) {
 						
 					} else if (roomno == 3) {
 						
+					
 					}
 					
 				} else {
