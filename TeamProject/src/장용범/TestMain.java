@@ -1,4 +1,4 @@
-package ½Å¿ìÇö;
+package F;
 
 import java.util.ArrayList;
 import java.util.Arrays;
