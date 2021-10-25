@@ -18,6 +18,10 @@ public class MemberController {
 		// 1. 유효성검사
 		if (member.getH_id().length() < 4) {
 			System.out.println(" [알림] : ID는 4글자이상 가능 합니다");
+			return false;	
+		}
+		if(member.getH_id().equals("admin")) {
+			System.out.println("사용할 수 없는 아이디입니다");
 			return false;
 		}
 		if (member.getH_pw().length() != 4) {
@@ -32,7 +36,7 @@ public class MemberController {
 		// 2. ID 중복체크 [ 리스트내 동일한 아이디가 있는지 확인 ]
 		for (Member temp : memberlist) {
 			if (temp.getH_id().equals(member.getH_id())) {
-				System.out.println(" [알림] : 이미 사용중인 아이디 입니다");
+				System.out.println(" [알림] : 이미 사용 중인 아이디 입니다");
 				return false;
 			}
 		}
@@ -41,7 +45,7 @@ public class MemberController {
 		memberlist.add(member);
 
 		// 4. 파일 처리
-		//	File.filesave(1);
+		File.filesave(1);
 		// File file = new File();
 		// file.filesave(1);
 
@@ -53,8 +57,13 @@ public class MemberController {
 	
 	// 2. 로그인 
 	public static boolean login( String h_id , String h_pw ) {
+		
 		for( Member member : memberlist ) {
-			if( member.getH_id().equals(h_id) && 
+			if(h_id.equals("admin")) {
+				System.out.println("사용할 수 없는 아이디입니다");
+				return false;
+			}
+			else if( member.getH_id().equals(h_id) && 
 					member.getH_pw().equals(h_pw) ) {
 				return true; // 로그인 성공시 
 			}
@@ -62,3 +71,10 @@ public class MemberController {
 		return false; // 로그인 실패시
 	}
 }
+
+
+
+
+
+
+

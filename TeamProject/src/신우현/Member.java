@@ -26,10 +26,9 @@ public class Member {
 		this.h_phone = h_phone;
 		
 	}
-
 	
-
 	
+		
 	
 	// 3. ¸Þ¼Òµå
 	
@@ -60,8 +59,9 @@ public class Member {
 	public String getH_phone() {
 		return h_phone;
 	}
-
-
+	
+	
+	
 
 	
 	
