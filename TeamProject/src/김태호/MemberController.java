@@ -2,8 +2,7 @@ package 김태호;
 
 import java.util.ArrayList;
 
-import database.File;
-import model.Member;
+
 
 public class MemberController {
 
@@ -42,7 +41,8 @@ public class MemberController {
 		memberlist.add(member);
 
 		// 4. 파일 처리
-//		File.filesave(1);
+			File.filesave(1);
+		 
 		// File file = new File();
 		// file.filesave(1);
 

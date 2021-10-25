@@ -3,14 +3,14 @@ package 김태호;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-import controller.MemberController;
-import model.Member;
+import 김태호.MemberController;
+import 김태호.Member;
 
 public class File {
 	// 1. 필드
 		// 1. 회원정보를 저장하는 파일의 경로 
 		private static String memberpath = 
-				"C:/Users/pc/git/ezen_kth/TeamProject_hotel_kth/src/database/memberlist.txt";
+				"C:/Users/505/git/ezen_kth/TeamProject_hotel_kth/src/Final/memberlist.txt";
 		
 		// 2. 
 		

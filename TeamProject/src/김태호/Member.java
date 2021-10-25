@@ -1,5 +1,8 @@
 package 김태호;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
 public class Member {
 
 	// 1. 필드
