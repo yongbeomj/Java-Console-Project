@@ -30,14 +30,14 @@ public class TestMain {
 			
 			if (ch1 == 1) {
 				System.out.println("======menu1======");
-				System.out.println("1.예약등록 2.예약취소 3.본인예약조회 4.전체예약조회");
+				System.out.println("1.예약등록 2.예약취소 3.본인예약조회 4.전체예약조회 5.객실세부정보");
 				System.out.print(">>> 선택 : "); int ch2 = scanner.nextInt();
 
 				if (ch2 == 1) { // 예약등록
-					System.out.println(">>호텔지점 선택<<");
-					System.out.println("1.호텔1 2.호텔2 3.호텔3"); int hotelch = TestMain.scanner.nextInt();
-					System.out.println(">>방 타입 선택<<");
-					System.out.println("1.스위트 2.디럭스 3.스탠다드"); int roomch = TestMain.scanner.nextInt();
+					System.out.println(">>호텔지점<<");
+					System.out.print("1.호텔1 2.호텔2 3.호텔3  >>> 선택 : "); int hotelch = TestMain.scanner.nextInt();
+					System.out.println(">>방 타입<<");
+					System.out.print("1.스위트 2.디럭스 3.스탠다드  >>> 선택 : "); int roomch = TestMain.scanner.nextInt();
 					
 					if (hotelch == 1) {
 						호텔예약 = new 호텔1();
@@ -116,9 +116,19 @@ public class TestMain {
 					호텔예약 = new 호텔2();	호텔예약.전체예약현황();
 					호텔예약 = new 호텔3();	호텔예약.전체예약현황();
 					System.out.println("---------------------------------");
+				} else if (ch2 == 5) {
+					System.out.print("1.스위트 2.디럭스 3.스탠다드"); int roomno = scanner.nextInt();
+					if (roomno == 1) {
+						
+					} else if (roomno == 2) {
+						
+					} else if (roomno == 3) {
+						
+					}
+					
 				} else {
 					System.out.println("알 수 없는 행동");
-				}
+				} 
 				
 			} else if (ch1 == 2) {
 				System.out.println("======menu2======");

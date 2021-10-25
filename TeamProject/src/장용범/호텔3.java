@@ -8,16 +8,22 @@ public class 호텔3 extends 호텔Total {
 			if (room[hotelch-1][roomch-1] == 0) {
 				System.out.println("호텔3 / 스위트룸 예약 완료");
 				room[hotelch-1][roomch-1] = 1;
+			} else {
+				System.out.println("이미 예약된 객실입니다");
 			}
 		} else if (roomch == 2) {
 			if (room[hotelch-1][roomch-1] == 0) {
 				System.out.println("호텔3 / 디럭스룸 예약 완료");
 				room[hotelch-1][roomch-1] = 1;
+			} else {
+				System.out.println("이미 예약된 객실입니다");
 			}
 		} else if (roomch == 3) {
 			if (room[hotelch-1][roomch-1] == 0) {
 				System.out.println("호텔3 / 스탠다드룸 예약 완료");
 				room[hotelch-1][roomch-1] = 1;
+			} else {
+				System.out.println("이미 예약된 객실입니다");
 			}
 		}
 	}
@@ -27,16 +33,22 @@ public class 호텔3 extends 호텔Total {
 			if (room[hotelch-1][roomch-1] == 1) {
 				System.out.println("호텔3 / 스위트룸 예약취소 완료");
 				room[hotelch-1][roomch-1] = 0;
+			} else {
+				System.out.println("다시 입력바랍니다");
 			}
 		} else if (roomch == 2) {
 			if (room[hotelch-1][roomch-1] == 1) {
 				System.out.println("호텔3 / 디럭스룸 예약취소 완료");
 				room[hotelch-1][roomch-1] = 0;
+			} else {
+				System.out.println("다시 입력바랍니다");
 			}
 		} else if (roomch == 3) {
 			if (room[hotelch-1][roomch-1] == 1) {
 				System.out.println("호텔3 / 스탠다드룸 예약취소 완료");
 				room[hotelch-1][roomch-1] = 0;
+			} else {
+				System.out.println("다시 입력바랍니다");
 			}
 		}
 	}
