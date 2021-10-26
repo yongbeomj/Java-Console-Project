@@ -2,6 +2,7 @@ package 장용범;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 
 public class Member {
 
@@ -10,7 +11,6 @@ public class Member {
 	private String h_pw;
 	private String h_name;
 	private String h_phone;
-
 	
 	
 	// 2. 생성자
@@ -24,11 +24,8 @@ public class Member {
 		this.h_pw = h_pw;
 		this.h_name = h_name;
 		this.h_phone = h_phone;
-		
 	}
 	
-	
-		
 	
 	// 3. 메소드
 	
@@ -59,6 +56,8 @@ public class Member {
 	public String getH_phone() {
 		return h_phone;
 	}
+
+
 	
 	
 	

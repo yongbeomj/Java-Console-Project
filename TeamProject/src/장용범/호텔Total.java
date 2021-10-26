@@ -11,7 +11,6 @@ public class 호텔Total implements 호텔예약 {
 	public static String[][] room = new String[3][3]; 
 	
 
-	// 생성자
 	
 	// 메소드
 	@Override
@@ -20,16 +19,18 @@ public class 호텔Total implements 호텔예약 {
 		if (room[hotelch-1][roomch-1] == null) {
 			System.out.println("*** 호텔 / ** 룸 예약 완료 ***");
 			 room[hotelch-1][roomch-1] = h_id;
-			 
+		
 			
 		}
 		
 	}
+	
 	@Override
 	public void 예약취소(int hotelch, int roomch, String h_id) {
 		if (room[hotelch-1][roomch-1] == null) {
 			System.out.println("*** 호텔 / ** 룸 예약취소 완료 ***");
 			room[hotelch-1][roomch-1] = h_id;
+	
 		}
 		System.out.println("*** 예약 취소 완료 ***");
 	}
@@ -46,6 +47,7 @@ public class 호텔Total implements 호텔예약 {
 		}
 		
 	}
+	
 	@Override
 	public void 전체예약현황_회원() {
 		System.out.print("호텔 **\t");
@@ -70,7 +72,6 @@ public class 호텔Total implements 호텔예약 {
 				
 		}
 	}
-	
 	
 	@Override
 	public void 파일처리() {

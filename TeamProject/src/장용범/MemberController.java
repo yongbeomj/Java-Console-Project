@@ -1,6 +1,7 @@
 package 장용범;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 
 
@@ -8,8 +9,8 @@ public class MemberController {
 
 	private static final Object h_id = null;
 	// 1. 필드 [ 모든 회원을 담고 있는 객체 = 컬렉션 프레임워크 vs 배열 ]
-	public static ArrayList<Member> memberlist = new ArrayList<>();
-
+	public static Vector<Member> memberlist = new Vector<>();
+	
 	// 2. 메소드
 
 	// 1. 회원가입
@@ -43,14 +44,9 @@ public class MemberController {
 
 		// 3. 리스트 저장
 		memberlist.add(member);
-
-		// 4. 파일 처리
+	
 		File.filesave(1);
-		// File file = new File();
-		// file.filesave(1);
-
-
-
+		
 		return true; // 회원가입 성공시
 
 	}
