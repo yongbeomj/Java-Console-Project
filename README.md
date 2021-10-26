@@ -10,10 +10,9 @@
 - Windows 10
 - git
 ### 4. 서비스 설계 다이어그램
-![그림1](https://user-images.githubusercontent.com/87436495/137877871-555af2b4-6989-44b1-afe3-5f5998ae4cc5.png)
-
-![구조도](https://user-images.githubusercontent.com/87436495/138379371-4e375e30-bfdb-4234-992f-5d4b7c7fa8de.png)
-
+<!-- ![그림1](https://user-images.githubusercontent.com/87436495/137877871-555af2b4-6989-44b1-afe3-5f5998ae4cc5.png) -->
+- 화면구성
+![그림1](https://user-images.githubusercontent.com/87436495/138815062-8b16f40f-4d1f-4af8-a080-158d9a662b1f.png)
 ---
 1. Main  
 ArrayList

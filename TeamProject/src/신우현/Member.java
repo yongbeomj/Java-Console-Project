@@ -1,44 +1,67 @@
-package 팀프로젝트;
-public class Member{
-	protected static String id;
-	protected static String password;
-	protected static String name;
-	protected static String phone;
+package 신우현;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
+
+public class Member {
+
+	// 1. 필드
+	private String h_id;
+	private String h_pw;
+	private String h_name;
+	private String h_phone;
+	
 	
 	// 2. 생성자
-	public Member() {}
-	public Member(String id, String password, String name, String Phone) {
-		this.id = id;
-		this.password = password;
-		this.name = name;
-		this.phone = phone;
+	public Member() {
+
 	}
-	public static String getId() {
-		return id;
+	
+	public Member(String h_id, String h_pw, String h_name, String h_phone) {
+		super();
+		this.h_id = h_id;
+		this.h_pw = h_pw;
+		this.h_name = h_name;
+		this.h_phone = h_phone;
 	}
-	public static void setId(String id) {
-		Member.id = id;
+	
+	
+	// 3. 메소드
+	
+	public String getH_id() {
+		return h_id;
 	}
-	public static String getPassword() {
-		return password;
+
+	public void setH_id(String h_id) {
+		this.h_id = h_id;
 	}
-	public static void setPassword(String password) {
-		Member.password = password;
+
+	public String getH_pw() {
+		return h_pw;
 	}
-	public static String getName() {
-		return name;
+
+	public void setH_pw(String h_pw) {
+		this.h_pw = h_pw;
 	}
-	public static void setName(String name) {
-		Member.name = name;
+
+	public String getH_name() {
+		return h_name;
 	}
-	public static String getPhone() {
-		return phone;
+
+	public void setH_name(String h_name) {
+		this.h_name = h_name;
 	}
-	public static void setPhone(String phone) {
-		Member.phone = phone;
+
+	public String getH_phone() {
+		return h_phone;
 	}
+
 
 	
+	
+	
 
-
+	
+	
 }
