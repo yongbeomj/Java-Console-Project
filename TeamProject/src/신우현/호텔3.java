@@ -48,7 +48,8 @@ public class 호텔3 extends 호텔Total {
 				System.out.println("[[예약 취소]] : 호텔3 / 스위트룸");
 				room[hotelch-1][roomch-1] = null;
 				File.filesave(2);
-				File.fileload(2);
+				 File.fileload(2);
+				
 			} else {
 				System.out.println("다시 입력바랍니다");
 			}
@@ -57,7 +58,8 @@ public class 호텔3 extends 호텔Total {
 				System.out.println("[[예약 취소]] : 호텔3 / 디럭스룸");
 				room[hotelch-1][roomch-1] = null;
 				File.filesave(2);
-				File.fileload(2);
+				 File.fileload(2);
+				
 			} else {
 				System.out.println("다시 입력바랍니다");
 			}
@@ -66,7 +68,8 @@ public class 호텔3 extends 호텔Total {
 				System.out.println("[[예약 취소]] : 호텔3 / 스탠다드룸");
 				room[hotelch-1][roomch-1] = null;
 				File.filesave(2);
-				File.fileload(2);
+				 File.fileload(2);
+				
 			} else {
 				System.out.println("다시 입력바랍니다");
 			}

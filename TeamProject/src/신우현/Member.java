@@ -24,13 +24,8 @@ public class Member {
 		this.h_pw = h_pw;
 		this.h_name = h_name;
 		this.h_phone = h_phone;
-		
-		
-		
 	}
 	
-	
-		
 	
 	// 3. ¸Þ¼Òµå
 	

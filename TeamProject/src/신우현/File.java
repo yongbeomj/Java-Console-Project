@@ -109,16 +109,19 @@ public class File {
 					// 4. 바이트배열 -> 문자열 변환
 					String instring = new String(bytes);
 					// 5. 회원 분리하기 \n
-					String[] room = instring.split("\n"); // \n 구분시 공백회원 추가 
+					String[] rooms = instring.split("\n"); // \n 구분시 공백회원 추가 
 					// 6. 반복문을 이용한 회원별 필드 분리하기 ,
-					for( int i = 0 ; i<room.length-1 ;i++ ) { // -1 : 공백회원 제외
+					
+					for( int i = 0 ; i<rooms.length-1 ;i++ ) { // -1 : 공백회원 제외
 						// 7. 회원별 필드 분리 	
-						String[] room1 = room[i].split(",");
-						// 8. 분리된 필드를 객체화 [ point필드는 int형으로 변환 : String -> Int ( Integer.parseInt )  ] 
-						String room1 = new room( room[0] , room[1] ,  
-										room[2], room[3]);
-						// 9. 각 객체를 리스트에 저장
-						roompath.add();
+						String[] room = rooms[i].split(",");
+						for( int j = 0 ; j<room.length ; j++ ) {
+							
+							if( !room[j].equals("null") ) {
+								호텔Total.room[i][j]=room[j];
+							}
+						}
+						
 					}
 					fileInputStream.close(); // 스트림 닫기 
 					return true; // 파일 불러오기 성공

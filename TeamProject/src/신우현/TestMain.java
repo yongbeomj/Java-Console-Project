@@ -12,7 +12,7 @@ public class TestMain {
 	
 
 	   public static void main(String[] args) {
-		   File.fileload(1);
+		   File.fileload(1);		   
 		   File.fileload(2);
 		  
 	      // 1. 인터페이스 생성
@@ -42,7 +42,7 @@ public class TestMain {
 	               }else {
 	                  System.err.println(" [알림] : 회원가입 실패 ");
 	               }
-	 
+	   
 
 	            } else if (ch == 2) {
 					System.out.println("++++++++++++ 로그인 페이지 ++++++++++++");
