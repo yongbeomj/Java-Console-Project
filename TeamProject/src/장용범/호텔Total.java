@@ -1,4 +1,4 @@
-package 신우현;
+package 장용범;
 
 import java.util.ArrayList;
 
@@ -20,6 +20,7 @@ public class 호텔Total implements 호텔예약 {
 		if (room[hotelch-1][roomch-1] == null) {
 			System.out.println("*** 호텔 / ** 룸 예약 완료 ***");
 			 room[hotelch-1][roomch-1] = h_id;
+			 
 			
 		}
 		
@@ -39,15 +40,26 @@ public class 호텔Total implements 호텔예약 {
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 3; j++) {
 				if (room[i][j] != null) {
-					System.out.println("*** 호텔 / ** 룸 예약 ***"+h_id);
+					System.out.println("*** 호텔 / ** 룸 예약 ***"+room[0][i]);
 				}
 			}
 		}
 		
 	}
-	
 	@Override
-	public void 전체예약현황() {
+	public void 전체예약현황_회원() {
+		System.out.print("호텔 **\t");
+		for (int i = 0; i < 3; i++) {
+			if (room[0][i] == null) {
+				System.out.print("□\t");
+			} else {
+				System.out.print("■\t");
+			}
+		}
+		System.out.println();
+	}
+	@Override
+	public void 전체예약현황_관리자() {
 		System.out.print("호텔 **\t");
 		for (int i = 0; i < 3; i++) {
 			if (room[0][i] == null) {

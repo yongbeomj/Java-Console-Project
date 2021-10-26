@@ -1,8 +1,9 @@
-package F;
+package 장용범;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+
 
 
 
@@ -18,9 +19,8 @@ public class TestMain {
 
    public static void main(String[] args) {
 	   File.fileload(1);
-      
    
-      
+	  
       // 1. 인터페이스 생성
       호텔예약 호텔예약;
       
@@ -84,17 +84,12 @@ public class TestMain {
 								if (hotelch == 1) {
 									호텔예약 = new 호텔1();
 									if (roomch == 1) {
-										
 										호텔예약.예약등록(hotelch, roomch,h_id);
 									} else if (roomch == 2) {
 										호텔예약.예약등록(hotelch, roomch,h_id);
 									} else if (roomch == 3) {
 										호텔예약.예약등록(hotelch, roomch,h_id);
 									}
-									
-									호텔예약.예약등록(hotelch, roomch , h_id );
-									
-									
 									
 								} else if (hotelch == 2) {
 									호텔예약 = new 호텔2();
@@ -166,12 +161,9 @@ public class TestMain {
 								System.out.println("---------------------------------");
 								System.out.println("호텔\t스위트룸\t디럭스룸\t스탠다드룸");
 								System.out.println("---------------------------------");
-								호텔예약 = new 호텔1();
-								호텔예약.전체예약현황();
-								호텔예약 = new 호텔2();
-								호텔예약.전체예약현황();
-								호텔예약 = new 호텔3();
-								호텔예약.전체예약현황();
+								호텔예약 = new 호텔1();	호텔예약.전체예약현황_회원();
+								호텔예약 = new 호텔2();	호텔예약.전체예약현황_회원();
+								호텔예약 = new 호텔3();	호텔예약.전체예약현황_회원();
 								System.out.println("---------------------------------");
 							} else if (ch2 == 5) { // 방정보
 								System.out.println("방정보 : 1.스탠다드 2.디럭스 3.스위트");
@@ -202,6 +194,7 @@ public class TestMain {
 						System.err.println(" 알 수 없는 행동 "); break;
 					}
                } else if (ch1 == 2) { // 관리자
+            	   
                   System.out.print(" Id : ");       String h_id = scanner.next();
                   System.out.print(" Password : ");    String h_pw = scanner.next();
                   if(h_id.equals("admin")) {
@@ -211,21 +204,36 @@ public class TestMain {
                          System.out.print(">>> 선택 : "); int ch3 = scanner.nextInt();
                          if(ch3 == 1) {
                         	System.out.println("호텔\t스위트룸\t디럭스룸\t스탠다드룸");
-                        	호텔예약 = new 호텔1();
-                        	호텔예약.전체예약현황(  );
-							호텔예약 = new 호텔2();
-							호텔예약.전체예약현황();
-							호텔예약 = new 호텔3();
-							호텔예약.전체예약현황();
+                        	호텔예약 = new 호텔1();	호텔예약.전체예약현황_관리자();
+							호텔예약 = new 호텔2();	호텔예약.전체예약현황_관리자();
+							호텔예약 = new 호텔3();	호텔예약.전체예약현황_관리자();
                         	
                          }
                          else if(ch3==2) {
-                        	호텔예약 = new 호텔1();
-                        	호텔예약.본인예약조회(h_id);
-							호텔예약 = new 호텔2();
-							호텔예약.본인예약조회(h_id);
-							호텔예약 = new 호텔3();
-							호텔예약.본인예약조회(h_id);
+                        	
+                        	 Member member = new Member(h_id, h_pw, h_id, h_pw);
+                        	 for (Member temp : MemberController.memberlist) {
+                        		 System.out.println("ID : "+temp.getH_id()+"/ 이름 : "+temp.getH_name()+"/ 연락처 : "+temp.getH_phone());
+                        	 }
+//                        	 호텔예약 = new 호텔1();
+//                             for(int i=0; i<호텔Total.room.length; i++) {
+//                                if(호텔Total.room[0][i] != null) {
+//                                   호텔예약.본인예약조회(신우현.호텔Total.room[0][i]);
+//                                }
+//                             }
+//                             호텔예약 = new 호텔2();
+//                             for(int i=0; i<호텔Total.room.length; i++) {
+//                            	 if(호텔Total.room[1][i] != null) {
+//                                   호텔예약.본인예약조회(호텔Total.room[1][i]);
+//                                }
+//                             }
+//                             호텔예약 = new 호텔3();
+//                             for(int i=0; i<호텔Total.room.length; i++) {
+//                            	 if(호텔Total.room[2][i] != null) {
+//                                   호텔예약.본인예약조회(호텔Total.room[2][i]);
+//                                }
+//                             }
+                        	
                          }
                          else if(ch3==3) {
                         	 break;
