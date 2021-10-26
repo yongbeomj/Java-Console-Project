@@ -200,7 +200,7 @@ public class TestMain {
                   if(h_id.equals("admin")) {
                      System.out.println(" 관리자가 로그인하셨습니다. ");
                      while(true) {
-                         System.out.println("1.예약현황 2.회원정보 3.뒤로가기");
+                         System.out.println("1.전체예약현황조회 2.전체회원정보조회 3.뒤로가기");
                          System.out.print(">>> 선택 : "); int ch3 = scanner.nextInt();
                          if(ch3 == 1) {
                         	System.out.println("호텔\t스위트룸\t디럭스룸\t스탠다드룸");
@@ -213,7 +213,9 @@ public class TestMain {
                         	
                         	 Member member = new Member(h_id, h_pw, h_id, h_pw);
                         	 for (Member temp : MemberController.memberlist) {
-                        		 System.out.println("ID : "+temp.getH_id()+"/ 이름 : "+temp.getH_name()+"/ 연락처 : "+temp.getH_phone());
+                        		 if (!temp.getH_id().equals("admin")) {
+                        			 System.out.println("ID : "+temp.getH_id()+"/ 이름 : "+temp.getH_name()+"/ 연락처 : "+temp.getH_phone());
+                        		 }
                         	 }
 //                        	 호텔예약 = new 호텔1();
 //                             for(int i=0; i<호텔Total.room.length; i++) {
