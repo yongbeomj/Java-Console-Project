@@ -12,8 +12,7 @@ public class 호텔2 extends 호텔Total {
 			if (room[hotelch-1][roomch-1] == null) {
 				System.out.println("[[예약 완료]] : 호텔2 / 스위트룸");
 				room[hotelch-1][roomch-1] = h_id;
-				File.filesave(2);
-				File.fileload(2);
+			
 			}
 			else {
 				System.out.println("이미 예약된 객실입니다");
@@ -22,8 +21,7 @@ public class 호텔2 extends 호텔Total {
 			if (room[hotelch-1][roomch-1] == null) {
 				System.out.println("[[예약 완료]] : 호텔2 / 디럭스룸");
 				room[hotelch-1][roomch-1] = h_id;
-				File.filesave(2);
-				File.fileload(2);
+			
 			}
 			else {
 				System.out.println("이미 예약된 객실입니다");
@@ -32,8 +30,7 @@ public class 호텔2 extends 호텔Total {
 			if (room[hotelch-1][roomch-1] == null) {
 				System.out.println("[[예약 완료]] : 호텔2 / 스탠다드룸");
 				room[hotelch-1][roomch-1] = h_id;
-				File.filesave(2);
-				File.fileload(2);
+			
 			}
 			else {
 				System.out.println("이미 예약된 객실입니다");
@@ -43,32 +40,29 @@ public class 호텔2 extends 호텔Total {
 	@Override
 	public void 예약취소(int hotelch, int roomch,String h_id) {
 		if (roomch == 1) {
-			if (room[hotelch-1][roomch-1] == h_id) {
+			if (room[hotelch-1][roomch-1].equals(h_id)) {
 				System.out.println("[[예약 취소]] : 호텔2 / 스위트룸");
 				room[hotelch-1][roomch-1] = null;
-				File.filesave(2);
-				 File.fileload(2);
+				
 				
 			} else {
 				System.out.println("다시 입력바랍니다");
 			}
 		} else if (roomch == 2) {
-			if (room[hotelch-1][roomch-1] == h_id) {
+			if (room[hotelch-1][roomch-1].equals(h_id)) {
 				System.out.println("[[예약 취소]] : 호텔2 / 디럭스룸");
 				room[hotelch-1][roomch-1] = null;
-				File.filesave(2);
-				 File.fileload(2);
+				
 				
 			} else {
 				System.out.println("다시 입력바랍니다");
 			}
 		} else if (roomch == 3) {
-			if (room[hotelch-1][roomch-1] == h_id) {
+			if (room[hotelch-1][roomch-1].equals(h_id)) {
 				System.out.println("[[예약 취소]] : 호텔2 / 스탠다드룸");
 				room[hotelch-1][roomch-1] = null;
-				File.filesave(2);
-				 File.fileload(2);
-				
+			
+	
 			} else {
 				System.out.println("다시 입력바랍니다");
 			}

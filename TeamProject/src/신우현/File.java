@@ -16,7 +16,7 @@ public class File {
 				"C:/Users/ezr210310/git/hotel-reservation-system/TeamProject/src/신우현/roomlist.txt";
 		
 	// 2. 저장 메소드 
-		public static boolean filesave( int type ) {
+		public synchronized static boolean filesave( int type ) {
 			try {
 				FileOutputStream fileOutputStream = null;
 				
@@ -72,7 +72,7 @@ public class File {
 	
 	
 	// 3. 불러오기 메소드
-		public static boolean fileload( int type ) {
+		public synchronized static boolean fileload( int type ) {
 			try {
 				FileInputStream fileInputStream = null;
 				if( type == 1 ) {

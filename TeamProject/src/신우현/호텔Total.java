@@ -19,8 +19,7 @@ public class 호텔Total implements 호텔예약 {
 		if (room[hotelch-1][roomch-1] == null) {
 			System.out.println("*** 호텔 / ** 룸 예약 완료 ***");
 			 room[hotelch-1][roomch-1] = h_id;
-			 File.filesave(2);
-			 File.fileload(2);
+		
 			
 		}
 		
@@ -31,8 +30,7 @@ public class 호텔Total implements 호텔예약 {
 		if (room[hotelch-1][roomch-1] == null) {
 			System.out.println("*** 호텔 / ** 룸 예약취소 완료 ***");
 			room[hotelch-1][roomch-1] = h_id;
-			File.filesave(2);
-			File.fileload(2);
+	
 		}
 		System.out.println("*** 예약 취소 완료 ***");
 	}
