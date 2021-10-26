@@ -12,7 +12,6 @@ public class 호텔1 extends 호텔Total {
 	public void 예약등록(int hotelch, int roomch,String h_id) {
 		if (roomch == 1) {
 			if (room[hotelch-1][roomch-1] == null) {
-				
 				System.out.println("호텔1 / 스위트룸 예약 완료");
 				room[hotelch-1][roomch-1] = h_id;
 			}
@@ -66,13 +65,13 @@ public class 호텔1 extends 호텔Total {
 	public void 본인예약조회(String h_id) {
 		Member member = new Member();
 		for (int i = 0; i < 3; i++) {
-			if (room[0][i] != null) {
+			if (room[0][i] != null && room[0][i].equals(h_id)) {
 				if (i == 0) {
-					System.out.println("*** 호텔1 / 스위트룸 예약 ***"+h_id);
+					System.out.println("*** 호텔1 / 스위트룸 예약 ***"+room[0][i]);
 				} else if (i == 1) {
-					System.out.println("*** 호텔1 / 디럭스룸 예약 ***"+h_id);
+					System.out.println("*** 호텔1 / 디럭스룸 예약 ***"+room[0][i]);
 				} else if (i == 2) {
-					System.out.println("*** 호텔1 / 스탠다드룸 예약 ***"+h_id);
+					System.out.println("*** 호텔1 / 스탠다드룸 예약 ***"+room[0][i]);
 				}
 				
 			}

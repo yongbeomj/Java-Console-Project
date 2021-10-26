@@ -85,17 +85,12 @@ public class TestMain {
 								if (hotelch == 1) {
 									호텔예약 = new 호텔1();
 									if (roomch == 1) {
-										
 										호텔예약.예약등록(hotelch, roomch,h_id);
 									} else if (roomch == 2) {
 										호텔예약.예약등록(hotelch, roomch,h_id);
 									} else if (roomch == 3) {
 										호텔예약.예약등록(hotelch, roomch,h_id);
 									}
-									
-									호텔예약.예약등록(hotelch, roomch , h_id );
-									
-									
 									
 								} else if (hotelch == 2) {
 									호텔예약 = new 호텔2();

@@ -61,13 +61,13 @@ public class 호텔2 extends 호텔Total {
 	public void 본인예약조회(String h_id) {
 		Member member = new Member();
 		for (int i = 0; i < 3; i++) {
-			if (room[1][i] != null) {
+			if (room[1][i] != null && room[1][i].equals(h_id)) {
 				if (i == 0) {
-					System.out.println("*** 호텔2 / 스위트룸 예약 ***"+h_id);
+					System.out.println("*** 호텔2 / 스위트룸 예약 ***"+room[1][i]);
 				} else if (i == 1) {
-					System.out.println("*** 호텔2 / 디럭스룸 예약 ***"+h_id);
+					System.out.println("*** 호텔2 / 디럭스룸 예약 ***"+room[1][i]);
 				} else if (i == 2) {
-					System.out.println("*** 호텔2 / 스탠다드룸 예약 ***"+h_id);
+					System.out.println("*** 호텔2 / 스탠다드룸 예약 ***"+room[1][i]);
 				}
 				
 			}

@@ -61,7 +61,7 @@ public class 호텔3 extends 호텔Total {
 	public void 본인예약조회(String h_id) {
 		Member member = new Member();
 		for (int i = 0; i < 3; i++) {
-			if (room[2][i] != null) {
+			if (room[2][i] != null&& room[2][i].equals(h_id)) {
 				if (i == 0) {
 					System.out.println("*** 호텔3 / 스위트룸 예약 ***   "+room[2][i]);
 				} else if (i == 1) {
