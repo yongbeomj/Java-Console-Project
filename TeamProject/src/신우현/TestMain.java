@@ -213,32 +213,25 @@ public class TestMain {
 	                        		 }
 	                        	 }
 
-	                        	
-	                         }
-	                         else if(ch3==3) {
-	                        	 break;
-	                        	 
 	                         }
 	                         else {System.out.println(" 다시 입력해주세요.");
-	                         ch3 = scanner.nextInt();}
+	                         ch3 = scanner.nextInt();
+	                         }
 	                     }    
 
 	               }
 	                  
 	               
 	            } else {
-	               System.out.println("종료");
-	               break;
+	               scanner = new Scanner(System.in);
 	            }
 	         }
 	               
+	            
 	         } catch (Exception e) {
 	            System.err.println(" [알림] : 메뉴 페이지 오류 [ 관리자문의 ] ");
 	            scanner = new Scanner(System.in); } // 입력객체 초기화 
-	         
-	         
-	         
-	           
+   
 	      }
 	   
 	   }
