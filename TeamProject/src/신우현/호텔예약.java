@@ -10,6 +10,6 @@ public interface 호텔예약 {
 	public void 본인예약조회(String h_id);
 	public void 전체예약현황_회원();
 	public void 전체예약현황_관리자();
-	public void 파일처리();
+	
 	
 }
