@@ -1,4 +1,4 @@
-package 김태호;
+package Final_1027;
 
 public class Room {
 	// 필드

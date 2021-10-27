@@ -1,9 +1,10 @@
-package 김태호;
+package Final_1027;
 
 import java.util.ArrayList;
 
 public class 호텔2 extends 호텔Total {
-	
+
+
 	// 메소드
 	@Override
 	public void 예약등록(int hotelch, int roomch, String h_id) {
@@ -86,9 +87,9 @@ public class 호텔2 extends 호텔Total {
 		System.out.print("라마다호텔\t");
 		for (int i = 0; i < 3; i++) {
 			if (room[1][i] == null) {
-				System.out.print("□\t");
+				System.out.print("\t□\t");
 			} else {
-				System.out.print("■\t");
+				System.out.print("\t■\t");
 			}
 		}
 		System.out.println();
@@ -99,9 +100,9 @@ public class 호텔2 extends 호텔Total {
 		System.out.print("라마다호텔\t");
 		for (int i = 0; i < 3; i++) {
 			if (room[1][i] == null) {
-				System.out.print("□\t");
+				System.out.print("\t□\t");
 			} else {
-				System.out.print(room[1][i] + "\t");
+				System.out.print("\t"+room[1][i] + "\t");
 			}
 
 		}

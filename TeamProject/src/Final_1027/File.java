@@ -1,17 +1,17 @@
-package 신우현;
+package Final_1027;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 
-import 신우현.MemberController;
-import 신우현.Member;
+import Final_1027.MemberController;
+import Final_1027.Member;
 
 public class File {
 	// 1. 필드
 	// 1. 회원정보를 저장하는 파일의 경로
-	private static String memberpath = "C:/Users/ezr210310/git/hotel-reservation-system/TeamProject/src/신우현/memberlist.txt";
-	private static String roompath = "C:/Users/ezr210310/git/hotel-reservation-system/TeamProject/src/신우현/roomlist.txt";
+	private static String memberpath = "C:/Users/505/git/hotel-reservation-system/TeamProject/src/신우현/memberlist.txt";
+	private static String roompath = "C:/Users/505/git/hotel-reservation-system/TeamProject/src/신우현/roomlist.txt";
 
 	// 2. 저장 메소드
 	public synchronized static boolean filesave(int type) {

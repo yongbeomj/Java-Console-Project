@@ -1,4 +1,4 @@
-package ½Å¿ìÇö;
+package Final_1027;
 
 import java.util.ArrayList;
 import java.util.Scanner;
