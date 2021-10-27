@@ -3,8 +3,7 @@ package 김태호;
 import java.util.ArrayList;
 
 public class 호텔3 extends 호텔Total {
-	public int[][] 예약회원리스트 = new int[3][3];
-
+	
 	// 메소드
 	@Override
 	public void 예약등록(int hotelch, int roomch, String h_id) {

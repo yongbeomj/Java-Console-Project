@@ -7,8 +7,6 @@ import Reference.Ticket;
 
 public class 호텔1 extends 호텔Total {
 
-	public int[][] 예약회원리스트 = new int[3][3];
-
 	// 메소드
 	@Override
 	public void 예약등록(int hotelch, int roomch, String h_id) {
@@ -91,9 +89,9 @@ public class 호텔1 extends 호텔Total {
 		System.out.print("신라호텔\t");
 		for (int i = 0; i < 3; i++) {
 			if (room[0][i] == null) {
-				System.out.print("□\t");
+				System.out.print("\t□\t");
 			} else {
-				System.out.print("■\t");
+				System.out.print("\t■\t");
 			}
 		}
 		System.out.println();
@@ -104,9 +102,9 @@ public class 호텔1 extends 호텔Total {
 		System.out.print("신라호텔\t");
 		for (int i = 0; i < 3; i++) {
 			if (room[0][i] == null) {
-				System.out.print("□\t");
+				System.out.print("\t□\t");
 			} else {
-				System.out.print(room[0][i] + "\t");
+				System.out.print("\t"+room[0][i] + "\t");
 			}
 
 		}

@@ -10,8 +10,8 @@ import 신우현.Member;
 public class File {
 	// 1. 필드
 	// 1. 회원정보를 저장하는 파일의 경로
-	private static String memberpath = "C:/Users/pc/git/hotel-reservation-system/TeamProject/src/김태호/memberlist.txt";
-	private static String roompath = "C:/Users/pc/git/hotel-reservation-system/TeamProject/src/김태호/roomlist.txt";
+	private static String memberpath = "C:/Users/ezr210310/git/hotel-reservation-system/TeamProject/src/신우현/memberlist.txt";
+	private static String roompath = "C:/Users/ezr210310/git/hotel-reservation-system/TeamProject/src/신우현/roomlist.txt";
 
 	// 2. 저장 메소드
 	public synchronized static boolean filesave(int type) {
@@ -58,7 +58,7 @@ public class File {
 			}
 
 		} catch (Exception e) {
-			System.out.println(" [알림] : 파일 저장 오류 발생 [ 관리자에게 문의 ]");
+			System.err.println(" [알림] : 파일 저장 오류 발생 [ 관리자에게 문의 ]");
 		}
 		return false; // 파일처리 실패
 	}
@@ -119,7 +119,7 @@ public class File {
 			}
 
 		} catch (Exception e) {
-			System.out.println(" [알림] : 파일 불러오기 오류 발생 [ 관리자에게 문의 ]");
+			System.err.println(" [알림] : 파일 불러오기 오류 발생 [ 관리자에게 문의 ]");
 		}
 		return false; // 파일 블러오기 실패시
 
