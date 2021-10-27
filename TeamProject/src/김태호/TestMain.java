@@ -79,7 +79,7 @@ public class TestMain {
 									System.out.println(">>방 타입 선택<<");
 									System.out.println("1.스위트 2.디럭스 3.스탠다드");
 									int roomch = TestMain.scanner.nextInt();
-									
+
 									if (hotelch == 1) {
 										호텔예약 = new 호텔1();
 										for (int i = 1; i <= 3; i++) {
@@ -104,8 +104,7 @@ public class TestMain {
 									} else {
 										System.err.println(" 잘못된 입력번호입니다. 번호를 다시 선택해주세요. ");
 									}
-								
-										
+
 								} else if (ch2 == 2) { // 예약취소
 									System.out.println(">>호텔지점 선택<<");
 									System.out.println("1.신라호텔 2.라마다호텔 3.그랜드호텔");
@@ -137,7 +136,7 @@ public class TestMain {
 									} else {
 										System.err.println("  잘못된 입력번호입니다. 번호를 다시 선택해주세요. ");
 									}
-									
+
 								} else if (ch2 == 3) { // 본인예약조회
 									System.out.println(" ================================================ ");
 									System.out.println("\t본인예약현황조회");
@@ -221,12 +220,12 @@ public class TestMain {
 
 										}
 									}
-								} else if(ch3==3) {
+								} else if (ch3 == 3) {
 									System.err.println(" 관리자가 로그아웃하셨습니다. ");
 									break;
 								} else { // 관리자 선택
 									System.err.println(" 다시 입력해주세요.");
-									
+
 								}
 							}
 
@@ -234,7 +233,7 @@ public class TestMain {
 
 					} else {
 						System.err.println(" 잘못입력하셨습니다. 초기화면으로 돌아갑니다. ");
-						
+
 					}
 				} else if (ch == 3) {
 					System.err.println(" 종료 ");
