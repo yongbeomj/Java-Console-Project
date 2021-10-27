@@ -12,64 +12,18 @@ public class 호텔Total implements 호텔예약 {
 
 	// 메소드
 	@Override
-	public void 예약등록(int hotelch, int roomch, String h_id) {
-
-		if (room[hotelch - 1][roomch - 1] == null) {
-			System.err.println(" *** 호텔 / ** 룸 예약 완료 *** ");
-			room[hotelch - 1][roomch - 1] = h_id;
-
-		}
-
-	}
+	public void 예약등록(int hotelch, int roomch, String h_id) {}
 
 	@Override
-	public void 예약취소(int hotelch, int roomch, String h_id) {
-		if (room[hotelch - 1][roomch - 1] == null) {
-			System.out.println("*** 호텔 / ** 룸 예약취소 완료 ***");
-			room[hotelch - 1][roomch - 1] = h_id;
-
-		}
-		System.out.println("*** 예약 취소 완료 ***");
-	}
+	public void 예약취소(int hotelch, int roomch, String h_id) {}
 
 	@Override
-	public void 본인예약조회(String h_id) {
-		System.err.println(" *** 본인예약조회 *** ");
-		Member member = new Member();
-		for (int i = 0; i < 3; i++) {
-			for (int j = 0; j < 3; j++) {
-				if (room[i][j] != null) {
-					System.err.println(room[0][i]);
-				}
-			}
-		}
-
-	}
+	public void 본인예약조회(String h_id) {}
 
 	@Override
-	public void 전체예약현황_회원() {
-		System.err.print("호텔 **\t");
-		for (int i = 0; i < 3; i++) {
-			if (room[0][i] == null) {
-				System.out.print("\t□\t");
-			} else {
-				System.out.print("\t■\t");
-			}
-		}
-		System.out.println();
-	}
+	public void 전체예약현황_회원() {}
 
 	@Override
-	public void 전체예약현황_관리자() {
-		System.out.print("호텔 **\t");
-		for (int i = 0; i < 3; i++) {
-			if (room[0][i] == null) {
-				System.out.print("\t□\t");
-			} else {
-				System.out.print("\t"+room[0][i]+"\t");
-			}
-
-		}
-	}
+	public void 전체예약현황_관리자() {}
 
 }

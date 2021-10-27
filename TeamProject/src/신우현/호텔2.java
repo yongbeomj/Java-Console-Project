@@ -3,7 +3,7 @@ package 신우현;
 import java.util.ArrayList;
 
 public class 호텔2 extends 호텔Total {
-	public int[][] 예약회원리스트 = new int[3][3];
+
 
 	// 메소드
 	@Override

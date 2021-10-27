@@ -8,7 +8,7 @@ public class FileThread extends Thread {
 
 			File.fileload(2);
 			try {
-				Thread.sleep(100);
+				Thread.sleep(1000);
 			} catch (Exception e) {
 				System.err.println("Ã³¸®Áß");
 			}

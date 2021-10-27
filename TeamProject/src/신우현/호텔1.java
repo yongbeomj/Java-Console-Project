@@ -7,7 +7,6 @@ import Reference.Ticket;
 
 public class 호텔1 extends 호텔Total {
 
-	public int[][] 예약회원리스트 = new int[3][3];
 
 	// 메소드
 	@Override
