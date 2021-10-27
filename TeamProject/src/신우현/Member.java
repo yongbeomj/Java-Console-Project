@@ -11,13 +11,12 @@ public class Member {
 	private String h_pw;
 	private String h_name;
 	private String h_phone;
-	
-	
+
 	// 2. 持失切
 	public Member() {
 
 	}
-	
+
 	public Member(String h_id, String h_pw, String h_name, String h_phone) {
 		super();
 		this.h_id = h_id;
@@ -25,10 +24,9 @@ public class Member {
 		this.h_name = h_name;
 		this.h_phone = h_phone;
 	}
-	
-	
+
 	// 3. 五社球
-	
+
 	public String getH_id() {
 		return h_id;
 	}
@@ -57,11 +55,4 @@ public class Member {
 		return h_phone;
 	}
 
-
-	
-	
-	
-
-	
-	
 }

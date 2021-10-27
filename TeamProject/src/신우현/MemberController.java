@@ -3,14 +3,12 @@ package 신우현;
 import java.util.ArrayList;
 import java.util.Vector;
 
-
-
 public class MemberController {
 
 	private static final Object h_id = null;
 	// 1. 필드 [ 모든 회원을 담고 있는 객체 = 컬렉션 프레임워크 vs 배열 ]
 	public static Vector<Member> memberlist = new Vector<>();
-	
+
 	// 2. 메소드
 
 	// 1. 회원가입
@@ -19,9 +17,9 @@ public class MemberController {
 		// 1. 유효성검사
 		if (member.getH_id().length() < 4) {
 			System.err.println(" [알림] : ID는 4글자이상 가능 합니다. ");
-			return false;	
+			return false;
 		}
-		if(member.getH_id().equals("admin")) {
+		if (member.getH_id().equals("admin")) {
 			System.err.println(" 사용할 수 없는 아이디입니다. ");
 			return false;
 		}
@@ -44,33 +42,24 @@ public class MemberController {
 
 		// 3. 리스트 저장
 		memberlist.add(member);
-	
+
 		File.filesave(1);
-		
+
 		return true; // 회원가입 성공시
 
 	}
-	
-	// 2. 로그인 
-	public static boolean login( String h_id , String h_pw ) {
-		
-		for( Member member : memberlist ) {
-			if(h_id.equals("admin")) {
+
+	// 2. 로그인
+	public static boolean login(String h_id, String h_pw) {
+
+		for (Member member : memberlist) {
+			if (h_id.equals("admin")) {
 				System.err.println(" 사용할 수 없는 아이디입니다. ");
 				return false;
-			}
-			else if( member.getH_id().equals(h_id) && 
-					member.getH_pw().equals(h_pw) ) {
-				return true; // 로그인 성공시 
+			} else if (member.getH_id().equals(h_id) && member.getH_pw().equals(h_pw)) {
+				return true; // 로그인 성공시
 			}
 		}
 		return false; // 로그인 실패시
 	}
 }
-
-
-
-
-
-
-
