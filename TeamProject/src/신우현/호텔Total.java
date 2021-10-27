@@ -51,9 +51,9 @@ public class 호텔Total implements 호텔예약 {
 		System.err.print("호텔 **\t");
 		for (int i = 0; i < 3; i++) {
 			if (room[0][i] == null) {
-				System.out.print("□\t");
+				System.out.print("\t□\t");
 			} else {
-				System.out.print("■\t");
+				System.out.print("\t■\t");
 			}
 		}
 		System.out.println();
@@ -64,9 +64,9 @@ public class 호텔Total implements 호텔예약 {
 		System.out.print("호텔 **\t");
 		for (int i = 0; i < 3; i++) {
 			if (room[0][i] == null) {
-				System.out.print("□\t");
+				System.out.print("\t□\t");
 			} else {
-				System.out.print(room[0][i]);
+				System.out.print("\t"+room[0][i]+"\t");
 			}
 
 		}
